@@ -1,0 +1,266 @@
+<?php
+    include_once 'C:\Users\Marcus\Desktop\Lexus\site.php';
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexus Driving School</title>
+    <!--bootstrap links-->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <!--CSS file link-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/fav-icon" href="fav.ico">
+
+</head>
+<body>
+   
+    <!--header section starts-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-car"></i>Lexus Driving School</a>
+
+        <div class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Categories</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faqs">Faqs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!--header section ends-->
+
+   <!--home section starts-->
+    <section id="home" class="home">
+        <h1 class="banner">Lexus Driving School Busia</h1>
+        <h3 class="slogan">Do you have a vision? We have a team to get you there</h3>
+        
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+
+        <div class="fas fa-car" id="num1"></div>
+        <div class="fas fa-id-card" id="num2"></div>
+    </section>
+   
+   <!--home section ends-->
+
+   <!--about section starts-->
+    <section id="about" class="about">
+        <h1 class="heading">About Us</h1>
+        <div class="row">
+            <div class="content">
+                <h3>We teach people how to drive</h3>
+                <p>We have helped hundreds achieve there dream of becoming a qualified driver.</p>
+                <div id="additional">
+                    <p>If you want to be a skilled and competent driver, a driving course is mandatory for you.<br>We would like to help you get to the experienced level</p>
+                </div>
+                
+                <button class="btn" id="read-button" onclick="showAddInfo()">Read More</button>
+            </div>
+
+            <div class="image">
+                <img src="car1-edited.jpg" alt="">
+            </div>
+
+        </div>
+       
+    </section>
+   <!--about section ends-->
+
+   <!--service section starts-->
+    <section id="service" class="service">
+        <h1 class="heading">Vehicle Categories</h1>
+        <div class="row">
+            
+            <div class="image">
+                <img src="amukura-house.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>We offer training for the following categories of vehicles:-</h3>
+                <p>Class A1(Moped)<br>
+                Class A2(Light motorcycle) <br>
+                Class A3(Motorcycle taxis couriers-three wheelers e.g. tuktuk)<br>
+                Class B1(Light vehicle)<br>
+                Class C1(Light Trucks)<br>
+                Class D1(Van)<br>
+                Class D2(Mini-bus)<br>
+                Class D3(Large bus)</p>
+                <div id="hidden">
+                    <p>A1- Enables one to ride a motorcycle<br>
+                        A2- Enables one to ride a p.s.v motorcycle<br>
+                        A3- Enables one to ride a p.s.v three-wheeler motorcycle<br>
+                        B1- Enables one to drive a light passenger car<br>One can drive either manual or automatic gearbox(can carry upto 7 passengers<br>
+                        C1- Enables one to drive a light truck equipped with either manual or automatic gearbox.<br>
+                        D1- Enables one to drive a van with maximum of 14 passengers(matatu)<br> either one with manual or automatic gearbox<br>
+                        D2- Enables one to drive a bus with 14 to 32 passengers(either manual or automatic)<br>
+                        D3- Enables one to drive a bus with 33 or more passengers(either manual or automatic)
+
+                    </p>
+                </div>
+                <button class="btn" id="read-btn" onclick="showhidden()">Read More</button>
+            </div>
+            
+            
+        </div>
+    </section>
+
+
+   <!--service section ends-->
+
+
+    <!--team section starts-->
+     <section id="team" class="team">
+        <h1 class="heading">Our Team</h1>
+
+        <div class="row">
+            
+            <div class="card">
+                <div class="image">
+                    <img src="CEO.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>John Isandura</h3>
+                    <span>C.E.O</span>
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="https://wa.me/254712714789?text=Can%20I%20learn%20to%20drive%?" class="fab fa-whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="manager.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Grace Lavoga</h3>
+                    <span>Manager</span>
+                    <div class="icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="https://wa.me/254712714789?text=Can%20I%20learn%20to%20drive%?" class="fab fa-whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </section>
+
+
+    <!--team section ends-->
+
+    <!--contact section starts-->
+     <section id="contact" class="contact">
+
+        <h1 class="heading">Contact Us</h1>
+        <div class="row">
+            <div class="image">
+                <img src="contact-us.png" alt="">
+            </div>
+
+            <div class="form-container">
+                <form action="store.php" method="POST">
+                    <div class="inputBox">
+                        <input type="text" name="first_name" placeholder="first name">
+                        <input type="text" name="second_name" placeholder="last name">
+                    </div>
+
+                    <input type="email" name="email_address" placeholder="Email Address">
+                    <textarea name="user_text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" placeholder="send">
+                </form>
+            </div>
+        </div>
+     </section>
+     
+    
+
+    <!--contact section ends-->
+
+    <!--FAQ section starts-->
+     <section id="faqs" class="faq">
+        <h1 class="heading">FAQs</h1>
+        <div class="row">
+            <div class="image">
+                <img src="faqs.jpg" alt="">
+            </div>
+            <div class="accordion-container">
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>How much will it cost?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Prices vary depending of the class one is taking. For more infomation contact the CEO Mr Isandura or the manager madam Lavoga</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>Where are you located?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Our offices are located at Amukura House on 2nd Floor Opposite the County Government offices.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <span>+</span>
+                        <h3>How long does it take?</h3>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Learning how to drive normally takes about 3-4 months.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+
+    <!--FAQ section ends-->
+
+    <!--footer section starts-->
+     <section class="footer">
+         <h1>Developed by marcus_programmer | @Smart_Development | Copyright &copy; 2021</h1>
+        
+         <div class="icons">
+             <a href="https://web.facebook.com/marcos.garvey.773" class="fab fa-facebook-f"></a>
+             <a href="https://www.instagram.com/marcus_programmer/" class="fab fa-instagram"></a>
+             <a href="https://wa.me/254712714789?text=I%20need%20a%20website%20Are%20you%20available?" class="fab fa-whatsapp"></a>
+         </div>
+     
+    </section>
+
+    <!--footer section ends-->
+
+
+
+
+
+
+    
+
+
+    <!--jquery file link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--custom js file link-->
+    <script src="main.js"></script>
+</body>
+</html>
